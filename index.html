@@ -1,11 +1,367 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Everybody</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
-    <h1>Hello, World!</h1>
-</body>
-</html>
+
+<div class="web-layout">
+    <nav>
+        <div class="logo">
+            <img src="/images/logofoxbm.png" alt="Fox.BM Logo">
+        </div>
+        <ul>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Learning</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Smart, Agile</h1>
+            <h2>Business Management System</h2>
+            <p>@TextService.GetText("_foxbm.tagb_")</p>
+            <a href="/request-demo" class="btn-demo">Request a Demo</a>
+        </div>
+        <div class="hero-image">
+            <img src="/images/dashboard-placeholder.png" alt="Sales Dashboard">
+        </div>
+    </div>
+
+    <div class="content-features-wrapper">
+        <div class="content">
+            <h2>Empower Your Business with Smart, Integrated Solutions</h2>
+            <p><strong>Fox-BM</strong> encapsulates the full potential of a fully integrated system. From streamlining internal operations and reducing costs to improving customer experiences and supporting strategic decision-making.</p>
+            <p>@TextService.GetText("_foxbm.intro_") </p>
+        </div>
+        <div class="features">
+            <h2>Comprehensive Business Modules</h2>
+            <div class="feature-description">
+                <p> @TextService.GetText("_foxbm.features_") </p>
+            </div>
+            <div class="icon-grid">
+                <a href="#hr" class="feature-item" title="Manage employee records, payroll, benefits, and more.">
+                    <i class="fas fa-users"></i>
+                    <p>HR</p>
+                </a>
+                <a href="#finance" class="feature-item" title="Track expenses, manage budgets, and generate financial reports.">
+                    <i class="fas fa-coins"></i>
+                    <p>Finance</p>
+                </a>
+                <a href="#supply-chain" class="feature-item" title="Optimize inventory, manage suppliers, and streamline logistics.">
+                    <i class="fas fa-boxes"></i>
+                    <p>Supply Chain</p>
+                </a>
+                <a href="#crm" class="feature-item" title="Manage customer interactions, sales, and support.">
+                    <i class="fas fa-handshake"></i>
+                    <p>CRM</p>
+                </a>
+                <a href="#operations" class="feature-item" title="Oversee daily operations, manage projects, and improve efficiency.">
+                    <i class="fas fa-cogs"></i>
+                    <p>Operations</p>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="hr" class="feature-block">
+        <h2>@TextService.GetText("_foxbm.hr.section_")</h2>
+        <div class="container">     
+            <div class="section-content">
+                <h2>@TextService.GetText("_foxbm.hr.title_")</h2>
+                <p>@TextService.GetText("_foxbm.hr.intro_")</p>
+                <a href="#">Learn more about Fox-BM (Video)</a>
+
+            </div>
+            <div class="image">
+                <img src="/images/dashboard-placeholder.png" alt="Fox-BM Dashboard Interface">
+                <div class="icon-group">
+                    <i class="fas fa-user" title="Bio"></i>
+                    <i class="fas fa-briefcase" title="Employment"></i>
+                    <i class="fas fa-calendar-check" title="Attendance"></i>
+                    <i class="fas fa-plane-departure" title="Leave Management"></i>
+                    <i class="fas fa-file-contract" title="Contracts"></i>
+                    <i class="fas fa-file-invoice-dollar" title="Payslip"></i>
+                    <i class="fas fa-award" title="Rewards"></i>
+                    <i class="fas fa-hand-holding-usd" title="Loans and Liabilities"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="finance" class="feature-block">
+        <h2>@TextService.GetText("_foxbm.fn.section_")</h2>
+        <div class="container">
+            <div class="section-content">
+                <h2>@TextService.GetText("_foxbm.fn.title_")</h2>
+                <p>@TextService.GetText("_foxbm.fn.intro_")</p>
+                <a href="#">Learn more about Fox-BM (Video)</a>
+            </div>
+            <div class="image">
+                <img src="/images/dashboard-placeholder.png" alt="Fox-BM Dashboard Interface">
+            </div>
+        </div>
+    </div>
+    <div id="supply-chain" class="feature-block">
+        <h3>Supply Chain</h3>
+        <p>Optimize inventory, manage suppliers, and streamline logistics.</p>
+    </div>
+    <div id="crm" class="feature-block">
+        <h3>Customer Relationship Management</h3>
+        <p>Manage customer interactions, sales, and support.</p>
+    </div>
+    <div id="operations" class="feature-block">
+        <h3>Operations</h3>
+        <p>Oversee daily operations, manage projects, and improve efficiency.</p>
+    </div>
+</div>
+
+<style>
+
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        margin: 0;
+        font-family: 'Aptos', sans-serif;
+    }
+
+    .web-layout {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        padding: 15px 30px;
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+        gap: 50px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+
+    nav img {
+        height: 80px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        margin: 30px 0 0 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+        nav a:hover {
+            color: #1b6d85; /* Change color on hover */
+            font-weight: bolder;
+        }
+
+
+    .hero {
+        background-color: #1b6d85;
+        color: white;
+        padding: 100px 0 40px 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hero-text {
+        max-width: 50%;
+    }
+
+    .hero h1 {
+        font-size: 75px;
+        margin: 0 0 10px;
+        font-weight: 700;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+        margin: 0 0 60px;
+        font-weight: 400;
+    }
+
+    .hero p {
+        font-size: 22px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* 🔹 Remove white border from button */
+    .hero .btn-demo {
+        display: inline-block;
+        color: white;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        border: 2px solid white;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        margin-top: 40px;
+        background-color: transparent; /* Transparent default */
+    }
+
+    .hero .btn-demo:hover {
+        background-color: white;
+        color: #1b6d85;
+    }
+
+    .hero-image {
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero-image img {
+        display: inline-block;
+        width: 650px;
+        max-width: 100%; /* Responsive */
+    }
+
+    .content-features-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+
+        .content {
+        flex: 0 0 65%;
+        padding: 40px 30px;
+        text-align: left;
+    }
+
+    .content h2 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .content p {
+        font-size: 16px;
+        color: #555;
+        max-width: 800px;
+        line-height: 1.6;
+    }
+
+    .features {
+        flex:1;
+        text-align: left;
+        padding: 40px 0 20px;
+        margin-right: 100px;
+    }
+
+
+    .icon-grid {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+        .icon-grid a:hover {
+            color: orange; /* Change color on hover */
+        }
+
+    .feature-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        color: #333;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .feature-item i {
+        font-size: 30px;
+        color: #1b6d85;
+        margin-bottom: 10px;
+    }
+
+            .feature-item i a:hover {
+        color: orange; /* Change color on hover */
+    }
+
+    .feature-description {
+        padding:20px 0 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+        .feature-description p {
+            font-size: 12px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+    .feature-block {
+        padding: 40px 30px;
+        border-top: 2px solid #ddd;
+        margin: 20px 0;
+        min-height: calc(100vh - 100px);
+        scroll-margin-top: 100px;
+    }
+  
+
+    .container {
+        margin:70px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+        width: 90%;
+    }
+
+    .section-content, .image {
+        flex: 1;
+        margin: 10px;
+    }
+
+    .section-content {
+        padding:30px;
+        max-width: 40%;
+        font-size: 22px;
+        color: #555;
+        max-width: 800px;
+        line-height: 1.6;
+    }
+
+    .image {
+        max-width: 45%;
+    }
+
+        .image img {
+            width: 80%;
+            height: auto;
+        }
+
+    .icon-group {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        font-size: 24px;
+        color: #1b6d85;
+    }
+
+        .icon-group i {
+            cursor: pointer;
+        }
+</style>
